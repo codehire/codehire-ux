@@ -1,0 +1,24 @@
+
+section.page {
+  .title {
+    h1 {
+      color: #fff;
+
+      @media (max-width: '1200px') {
+        margin-bottom: 1.5em;
+      }
+
+      @media (max-width: '768px') {
+        font-size: 4.5vw;
+      }
+    }
+  }
+
+  .panel {
+    margin-bottom: 0;
+  }
+
+  .youtube {
+    margin-top: 0;
+  }
+}

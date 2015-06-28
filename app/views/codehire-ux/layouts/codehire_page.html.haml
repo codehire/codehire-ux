@@ -1,0 +1,11 @@
+!!!
+%html
+  %head= render partial: 'layouts/head_common'
+  %head= render partial: 'codehire-ux/layouts/head'
+  %body
+    /= render partial: 'layouts/facebook'
+    = render partial: 'codehire-ux/layouts/header_wrap'
+    .wrap.short
+      .container
+        = yield
+        = render partial: 'codehire-ux/layouts/footer'

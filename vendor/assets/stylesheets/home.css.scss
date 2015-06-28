@@ -1,0 +1,157 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font: 300 18px/1.65 "Open Sans";
+
+  .welcome {
+    margin-top: 15px;
+    background: hsla(197, 60, 47, 0.1);
+    background: none;
+    border-color: hsla(197, 60, 47, 0.8);
+    border-width: 2px;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .wrap {
+    &.short {
+      height: 90px;
+
+      .title {
+        margin-top: 8px;
+      }
+
+      .action-box {
+        margin-top: -8px;
+      }
+    }
+
+    height: 420px;
+
+    @media (max-width: '1200px') {
+      height: 360px;
+    }
+
+    @media (max-width: '860px') {
+      height: 320px;
+    }
+
+    @media (max-width: '660px') {
+      height: 280px;
+    }
+
+    @media (max-width: '580px') {
+      height: 250px;
+    }
+
+    @media (max-width: '520px') {
+      height: 220px;
+    }
+
+    @media (max-width: '470px') {
+      height: 160px;
+    }
+
+    @media (max-width: '350px') {
+      height: 120px;
+    }
+
+    background: hsl(200, 70%, 35%) asset-url("bg-pattern.png") 0 0 repeat;
+
+    .videos {
+      margin-top: 10px;
+      padding-left: 0;
+    }
+
+    .header {
+      margin: 40px 5px 20px 5px;
+
+
+      h1 {
+        text-shadow: 1px 2px 3px hsla(0, 0%, 0%, 0.25);
+        color: #fff;
+
+        @media(max-width: '1200px') {
+          font-size: 28px;
+        }
+      }
+
+      aside {
+        height: 378px;
+
+        @media(max-width: '1200px') {
+          height: 320px;
+        }
+
+        @media(max-width: '992px') {
+          display: none;
+        }
+      }
+
+      .video-caption {
+        height: 59px;
+        display: table;
+
+        p {
+          padding-top: 8px;
+          display: table-cell;
+          vertical-align: bottom;
+        }
+      }
+    }
+
+    .content {
+      margin: 0 5px;
+    }
+
+    aside {
+      .follow {
+        margin-bottom: 1em;
+      }
+
+      .twitter {
+        @media (max-width: '1200px') {
+          display: none;
+        }
+      }
+    }
+
+    section.subscribe {
+      .form--slogan {
+        color: #333;
+        text-align: center;
+      }
+
+      margin-top: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+
+      @media (max-width: '504px') {
+        width: 100%;
+        margin-bottom: 2em;
+      }
+    }
+
+    section.social {
+      margin-left: auto;
+      margin-right: auto;
+      width: 145px;
+    }
+
+    section.sponsors {
+      margin-top: 50px;
+      h1 {
+        font-size: 0.8em;
+        font-style: italic;
+        text-align: center;
+        color: #676B6E;
+      }
+    }
+  }
+}
+
