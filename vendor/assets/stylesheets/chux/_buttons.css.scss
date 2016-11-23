@@ -1,0 +1,49 @@
+@import 'chux/_colors';
+
+.button {
+  border: solid $gray 1px;
+
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  white-space: nowrap;
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-weight: 600;
+
+  color: $black;
+  font-size: 0.9em;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $light-gray;
+    color: $black;
+  }
+}
+
+.button-highlight {
+  @extend .button;
+  border: none;
+  background: $red;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($red, 0.5);
+  }
+}
+
+.button-alt {
+  @extend .button;
+  border: none;
+  background: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($blue, 0.5);
+  }
+}
+

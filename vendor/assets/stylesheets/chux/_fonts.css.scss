@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,300);
+@import 'chux/_colors';
+
+html, body {
+  font: 300 14px/1.65 "Source Sans Pro";
+}
+
+h1, h2, h3, h4 {
+  color: $black;
+  font-weight: 700;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
+}

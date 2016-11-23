@@ -1,0 +1,7 @@
+
+
+@mixin grow($val, $delay) {
+  transform: scale($val, $val);
+  //animation: grow 0.2 ease-in-out forward;
+  transition: all ease-in-out $delay forwards;
+}
